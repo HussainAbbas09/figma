@@ -9,12 +9,17 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     </head>
+    <script>
+    function toggleMenu() {
+        document.getElementById("mobileMenu").classList.toggle("active");
+        }
+    </script>
     <body>
         <header>
             <div class="landingpage">
                 <div class="navbar">
                     <div class="logo"><img src="images/Logo.svg"></div>
-                    <div class="texts">
+                    <div class="texts" id="mobileMenu">
                         <a href="">About us</a>
                         <a href="">Sevices</a>
                         <a href="">Use Cases</a>
@@ -22,7 +27,9 @@
                         <a href="">Blog</a>
                         <button class="req">Request a quote</button>
                     </div>
-                    <div class="burger"><img src="images/Burger menu icon.svg"></div>
+                    <div class="burger" onclick="toggleMenu()">
+                        <img src="images/Burger menu icon.svg" alt="">
+                    </div>
                 </div>
                 <div class="header">
                     <div class="firstp">
@@ -96,6 +103,7 @@
                     <h1 class="f1">01</h1>
                     <p class="f2">Consultation</p>
                     <img class="pi" src="images/Sub icon.svg">
+                    <img class="pi-sub" src="images/Plus icon.svg">
                 </div>
                 <hr class="p2br">
                 <p class="ll">During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
